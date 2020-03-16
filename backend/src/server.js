@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const cors = require('cors');
 const routes = require('./routes');
 
-const port = 3339;
+const port = process.env.PORT || 3339;
 const App = express();
 
 mongoose.connect('mongodb+srv://hacka-pocket:hacka-pocket@cluster0-sws4w.mongodb.net/hacka-pocket?retryWrites=true&w=majority', {
